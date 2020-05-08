@@ -1,0 +1,792 @@
+/* /index.html 200
+{
+    path: '/',
+    name: 'login',
+    component: () => import('../Pages/UserPages/Login.vue'),
+},
+
+{
+    path: '/forgot-password',
+    name: 'forgot-password',
+    component: () => import('../Pages/UserPages/ForgotPassword.vue'),
+},
+
+
+// Dashboards
+
+{
+    path: '/dashboards',
+    name: 'analytics',
+    meta: {layout: 'default'},
+    component: () => import('../DemoPages/Dashboards/Analytics.vue'),
+},
+{
+    path: '/dashboards/analytics',
+    name: 'analytics',
+    meta: {layout: 'default'},
+    component: () => import('../DemoPages/Dashboards/Analytics.vue'),
+},
+{
+    path: '/dashboards/advertisement',
+    name: 'advertisement',
+    meta: {layout: 'default'},
+    component: () => import('../DemoPages/Dashboards/Advertisement.vue'),
+},
+{
+    path: '/dashboards/management',
+    name: 'management',
+    meta: {layout: 'default'},
+    component: () => import('../DemoPages/Dashboards/Management.vue'),
+},
+{
+    path: '/dashboards/helpdesk',
+    name: 'helpdesk',
+    meta: {layout: 'default'},
+    component: () => import('../DemoPages/Dashboards/Helpdesk.vue'),
+},
+{
+    path: '/dashboards/monitoring',
+    name: 'monitoring',
+    meta: {layout: 'default'},
+    component: () => import('../DemoPages/Dashboards/Monitoring.vue'),
+},
+{
+    path: '/dashboards/crypto',
+    name: 'crypto',
+    meta: {layout: 'default'},
+    component: () => import('../DemoPages/Dashboards/Crypto.vue'),
+},
+{
+    path: '/dashboards/project-management',
+    name: 'project-management',
+    meta: {layout: 'default'},
+    component: () => import('../DemoPages/Dashboards/ProjectManagement.vue'),
+},
+{
+    path: '/dashboards/product',
+    name: 'product',
+    meta: {layout: 'default'},
+    component: () => import('../DemoPages/Dashboards/Product.vue'),
+},
+{
+    path: '/dashboards/statistics',
+    name: 'statistics',
+    meta: {layout: 'default'},
+    component: () => import('../DemoPages/Dashboards/Statistics.vue'),
+},
+
+// Applications
+
+{
+    path: '/apps/mailbox',
+    name: 'mailbox',
+    meta: {layout: 'apps'},
+    component: () => import('../DemoPages/Applications/Mailbox.vue'),
+},
+{
+    path: '/apps/chat',
+    name: 'chat',
+    meta: {layout: 'apps'},
+    component: () => import('../DemoPages/Applications/Chat.vue'),
+},
+{
+    path: '/apps/forums-listing',
+    name: 'forums-listing',
+    meta: {layout: 'default'},
+    component: () => import('../DemoPages/Applications/ForumsListing.vue'),
+},
+{
+    path: '/apps/forums-threads',
+    name: 'forums-threads',
+    meta: {layout: 'default'},
+    component: () => import('../DemoPages/Applications/ForumsThreads.vue'),
+},
+{
+    path: '/apps/forums-discussion',
+    name: 'forums-discussion',
+    meta: {layout: 'default'},
+    component: () => import('../DemoPages/Applications/ForumsDiscussion.vue'),
+},
+
+// Pages
+
+{
+    path: '/pages/login',
+    name: 'login',
+    component: () => import('../DemoPages/UserPages/Login.vue'),
+},
+{
+    path: '/pages/login-boxed',
+    name: 'login-boxed',
+    component: () => import('../DemoPages/UserPages/LoginBoxed.vue'),
+},
+{
+    path: '/pages/register',
+    name: 'register',
+    component: () => import('../DemoPages/UserPages/Register.vue'),
+},
+{
+    path: '/pages/register-boxed',
+    name: 'register-boxed',
+    component: () => import('../DemoPages/UserPages/RegisterBoxed.vue'),
+},
+{
+    path: '/pages/forgot-password',
+    name: 'forgot-password',
+    component: () => import('../DemoPages/UserPages/ForgotPassword.vue'),
+},
+{
+    path: '/pages/forgot-password-boxed',
+    name: 'forgot-password-boxed',
+    component: () => import('../DemoPages/UserPages/ForgotPasswordBoxed.vue'),
+},
+
+// Elements
+
+{
+    path: '/elements/buttons-standard',
+    name: 'buttons-standard',
+    meta: {layout: 'default'},
+    component: () => import('../DemoPages/Elements/Buttons/Standard.vue'),
+},
+{
+    path: '/elements/buttons-pills',
+    name: 'buttons-pills',
+    meta: {layout: 'default'},
+    component: () => import('../DemoPages/Elements/Buttons/Pills.vue'),
+},
+{
+    path: '/elements/buttons-square',
+    name: 'buttons-square',
+    meta: {layout: 'default'},
+    component: () => import('../DemoPages/Elements/Buttons/Square.vue'),
+},
+{
+    path: '/elements/buttons-shadow',
+    name: 'buttons-shadow',
+    meta: {layout: 'default'},
+    component: () => import('../DemoPages/Elements/Buttons/Shadow.vue'),
+},
+{
+    path: '/elements/buttons-icons',
+    name: 'buttons-icons',
+    meta: {layout: 'default'},
+    component: () => import('../DemoPages/Elements/Buttons/Icons.vue'),
+},
+{
+    path: '/elements/dropdowns',
+    name: 'dropdowns',
+    meta: {layout: 'default'},
+    component: () => import('../DemoPages/Elements/Dropdowns.vue'),
+},
+{
+    path: '/elements/icons',
+    name: 'icons',
+    meta: {layout: 'default'},
+    component: () => import('../DemoPages/Elements/Icons.vue'),
+},
+{
+    path: '/elements/badges-labels',
+    name: 'badges',
+    meta: {layout: 'default'},
+    component: () => import('../DemoPages/Elements/Badges.vue'),
+},
+{
+    path: '/elements/cards',
+    name: 'cards',
+    meta: {layout: 'default'},
+    component: () => import('../DemoPages/Elements/Cards.vue'),
+},
+{
+    path: '/elements/loaders',
+    name: 'loaders',
+    meta: {layout: 'default'},
+    component: () => import('../DemoPages/Elements/LoadingIndicators.vue'),
+},
+{
+    path: '/elements/list-group',
+    name: 'list-group',
+    meta: {layout: 'default'},
+    component: () => import('../DemoPages/Elements/ListGroups.vue'),
+},
+{
+    path: '/elements/navigation',
+    name: 'navigation',
+    meta: {layout: 'default'},
+    component: () => import('../DemoPages/Elements/NavigationMenus.vue'),
+},
+{
+    path: '/elements/timelines',
+    name: 'timeline',
+    meta: {layout: 'default'},
+    component: () => import('../DemoPages/Elements/Timeline.vue'),
+},
+{
+    path: '/elements/utilities',
+    name: 'utilities',
+    meta: {layout: 'default'},
+    component: () => import('../DemoPages/Elements/Utilities.vue'),
+},
+
+// Components
+
+{
+    path: '/components/tabs',
+    name: 'tabs',
+    meta: {layout: 'default'},
+    component: () => import('../DemoPages/Components/Tabs.vue'),
+},
+{
+    path: '/components/accordions',
+    name: 'accordions',
+    meta: {layout: 'default'},
+    component: () => import('../DemoPages/Components/Accordions.vue'),
+},
+{
+    path: '/components/notifications',
+    name: 'notifications',
+    meta: {layout: 'default'},
+    component: () => import('../DemoPages/Components/Notifications.vue'),
+},
+{
+    path: '/components/swal-alerts',
+    name: 'notifications-swal',
+    meta: {layout: 'default'},
+    component: () => import('../DemoPages/Components/SwalAlerts.vue'),
+},
+{
+    path: '/components/modals',
+    name: 'modals',
+    meta: {layout: 'default'},
+    component: () => import('../DemoPages/Components/Modals.vue'),
+},
+{
+    path: '/components/progress-bar',
+    name: 'progress-bar',
+    meta: {layout: 'default'},
+    component: () => import('../DemoPages/Components/ProgressBar.vue'),
+},
+{
+    path: '/components/tooltips-popovers',
+    name: 'tooltips-popovers',
+    meta: {layout: 'default'},
+    component: () => import('../DemoPages/Components/TooltipsPopovers.vue'),
+},
+{
+    path: '/components/carousel',
+    name: 'carousel',
+    meta: {layout: 'default'},
+    component: () => import('../DemoPages/Components/Carousel.vue'),
+},
+{
+    path: '/components/calendar',
+    name: 'calendar',
+    meta: {layout: 'default'},
+    component: () => import('../DemoPages/Components/Calendar.vue'),
+},
+{
+    path: '/components/pagination',
+    name: 'pagination',
+    meta: {layout: 'default'},
+    component: () => import('../DemoPages/Components/Pagination.vue'),
+},
+{
+    path: '/components/count-up',
+    name: 'count-up',
+    meta: {layout: 'default'},
+    component: () => import('../DemoPages/Components/CountUp.vue'),
+},
+{
+    path: '/components/scrollable-elements',
+    name: 'scrollable-elements',
+    meta: {layout: 'default'},
+    component: () => import('../DemoPages/Components/Scrollable.vue'),
+},
+{
+    path: '/components/maps',
+    name: 'maps',
+    meta: {layout: 'default'},
+    component: () => import('../DemoPages/Components/Maps.vue'),
+},
+{
+    path: '/components/ratings',
+    name: 'ratings',
+    meta: {layout: 'default'},
+    component: () => import('../DemoPages/Components/Ratings.vue'),
+},
+{
+    path: '/components/image-crop',
+    name: 'image-crop',
+    meta: {layout: 'default'},
+    component: () => import('../DemoPages/Components/ImageCrop.vue'),
+},
+
+// Tables
+
+{
+    path: '/tables/regular-tables',
+    name: 'regular-tables',
+    meta: {layout: 'default'},
+    component: () => import('../DemoPages/Tables/RegularTables.vue'),
+},
+{
+    path: '/tables/dynamic-tables',
+    name: 'dynamic-tables',
+    meta: {layout: 'default'},
+    component: () => import('../DemoPages/Tables/DynamicTables.vue'),
+},
+
+// Dashboard Widgets
+
+{
+    path: '/widgets/chart-boxes',
+    name: 'chart-boxes',
+    meta: {layout: 'default'},
+    component: () => import('../DemoPages/Widgets/ChartBoxes1.vue'),
+},
+{
+    path: '/widgets/chart-boxes-2',
+    name: 'chart-boxes-2',
+    meta: {layout: 'default'},
+    component: () => import('../DemoPages/Widgets/ChartBoxes2.vue'),
+},
+{
+    path: '/widgets/chart-boxes-3',
+    name: 'chart-boxes-3',
+    meta: {layout: 'default'},
+    component: () => import('../DemoPages/Widgets/ChartBoxes3.vue'),
+},
+{
+    path: '/widgets/profile-boxes',
+    name: 'profile-boxes',
+    meta: {layout: 'default'},
+    component: () => import('../DemoPages/Widgets/ProfileBoxes.vue'),
+},
+
+// Forms
+
+{
+    path: '/forms/controls',
+    name: 'controls',
+    meta: {layout: 'default'},
+    component: () => import('../DemoPages/Forms/Elements/Controls.vue'),
+},
+{
+    path: '/forms/layouts',
+    name: 'layouts',
+    meta: {layout: 'default'},
+    component: () => import('../DemoPages/Forms/Elements/Layouts.vue'),
+},
+{
+    path: '/forms/validation',
+    name: 'validation',
+    meta: {layout: 'default'},
+    component: () => import('../DemoPages/Forms/Elements/Validation.vue'),
+},
+{
+    path: '/forms/wizards',
+    name: 'wizards',
+    meta: {layout: 'default'},
+    component: () => import('../DemoPages/Forms/Elements/Wizards.vue'),
+},
+{
+    path: '/forms/sticky-headers',
+    name: 'sticky-headers',
+    meta: {layout: 'default'},
+    component: () => import('../DemoPages/Forms/Elements/Sticky.vue'),
+},
+{
+    path: '/forms/datepicker',
+    name: 'datepicker',
+    meta: {layout: 'default'},
+    component: () => import('../DemoPages/Forms/Components/Datepicker.vue'),
+},
+{
+    path: '/forms/range-slider',
+    name: 'range-slider',
+    meta: {layout: 'default'},
+    component: () => import('../DemoPages/Forms/Components/RangeSlider.vue'),
+},
+{
+    path: '/forms/input-selects',
+    name: 'input-selects',
+    meta: {layout: 'default'},
+    component: () => import('../DemoPages/Forms/Components/InputSelects.vue'),
+},
+{
+    path: '/forms/toggle-switch',
+    name: 'toggle-switch',
+    meta: {layout: 'default'},
+    component: () => import('../DemoPages/Forms/Components/ToggleSwitch.vue'),
+},
+{
+    path: '/forms/wysiwyg-editors',
+    name: 'editors',
+    meta: {layout: 'default'},
+    component: () => import('../DemoPages/Forms/Components/Editors.vue'),
+},
+{
+    path: '/forms/input-mask',
+    name: 'input-mask',
+    meta: {layout: 'default'},
+    component: () => import('../DemoPages/Forms/Components/InputMask.vue'),
+},
+{
+    path: '/forms/clipboard',
+    name: 'clipboard',
+    meta: {layout: 'default'},
+    component: () => import('../DemoPages/Forms/Components/Clipboard.vue'),
+},
+{
+    path: '/forms/textarea-autosize',
+    name: 'textarea-autosize',
+    meta: {layout: 'default'},
+    component: () => import('../DemoPages/Forms/Components/TextareaAutosize.vue'),
+},
+{
+    path: '/forms/colorpicker',
+    name: 'colorpicker',
+    meta: {layout: 'default'},
+    component: () => import('../DemoPages/Forms/Components/Colorpicker.vue'),
+},
+{
+    path: '/forms/dropzone',
+    name: 'dropzone',
+    meta: {layout: 'default'},
+    component: () => import('../DemoPages/Forms/Components/Dropzone.vue'),
+},
+
+// Charts
+
+{
+    path: '/charts/chartjs',
+    name: 'chartjs',
+    meta: {layout: 'default'},
+    component: () => import('../DemoPages/Charts/Chartjs.vue'),
+},
+{
+    path: '/charts/apexcharts',
+    name: 'apexcharts',
+    meta: {layout: 'default'},
+    component: () => import('../DemoPages/Charts/ApexCharts.vue'),
+},
+{
+    path: '/charts/gauges',
+    name: 'gauges',
+    meta: {layout: 'default'},
+    component: () => import('../DemoPages/Charts/Gauges.vue'),
+},
+{
+    path: '/charts/sparklines',
+    name: 'sparklines',
+    meta: {layout: 'default'},
+    component: () => import('../DemoPages/Charts/Sparklines.vue'),
+},
+
+{
+    path: '/material-components/alerts',
+    name: 'alerts',
+    meta: {layout: 'default'},
+    component: () => import('../DemoPages/Vuetify/ComponentsPages/alerts.vue'),
+},
+{
+    name: 'avatars',
+    path: '/material-components/avatars',
+    meta: {layout: 'default'},
+    component: () => import('../DemoPages/Vuetify/ComponentsPages/avatars.vue'),
+
+},
+{
+    name: 'badges-mat',
+    path: '/material-components/badges',
+    meta: {layout: 'default'},
+    component: () => import('../DemoPages/Vuetify/ComponentsPages/badges.vue'),
+
+},
+{
+    name: 'bottom-navigation',
+    path: '/material-components/bottom-navigation',
+    meta: {layout: 'default'},
+    component: () => import('../DemoPages/Vuetify/ComponentsPages/bottom-navigation.vue'),
+
+},
+{
+    name: 'bottom-sheets',
+    path: '/material-components/bottom-sheets',
+    meta: {layout: 'default'},
+    component: () => import('../DemoPages/Vuetify/ComponentsPages/bottom-sheets.vue'),
+
+},
+{
+    name: 'breadcrumbs',
+    path: '/material-components/breadcrumbs',
+    meta: {layout: 'default'},
+    component: () => import('../DemoPages/Vuetify/ComponentsPages/breadcrumbs.vue'),
+
+},
+{
+    name: 'buttons',
+    path: '/material-components/buttons',
+    meta: {layout: 'default'},
+    component: () => import('../DemoPages/Vuetify/ComponentsPages/buttons.vue'),
+},
+{
+    name: 'calendars',
+    path: '/material-components/calendars',
+    meta: {layout: 'default'},
+    component: () => import('../DemoPages/Vuetify/ComponentsPages/calendars.vue'),
+},
+{
+    name: 'cards-mat',
+    path: '/material-components/cards',
+    meta: {layout: 'default'},
+    component: () => import('../DemoPages/Vuetify/ComponentsPages/cards.vue'),
+},
+{
+    name: 'carousels-mat',
+    path: '/material-components/carousels',
+    meta: {layout: 'default'},
+    component: () => import('../DemoPages/Vuetify/ComponentsPages/carousels.vue'),
+},
+{
+    name: 'chips',
+    path: '/material-components/chips',
+    meta: {layout: 'default'},
+    component: () => import('../DemoPages/Vuetify/ComponentsPages/chips.vue'),
+},
+{
+    name: 'data-iterator',
+    path: '/material-components/data-iterator',
+    meta: {layout: 'default'},
+    component: () => import('../DemoPages/Vuetify/ComponentsPages/data-iterator.vue'),
+},
+{
+    name: 'data-tables',
+    path: '/material-components/data-tables',
+    meta: {layout: 'default'},
+    component: () => import('../DemoPages/Vuetify/ComponentsPages/data-tables.vue'),
+},
+{
+    name: 'dialogs',
+    path: '/material-components/dialogs',
+    meta: {layout: 'default'},
+    component: () => import('../DemoPages/Vuetify/ComponentsPages/dialogs.vue'),
+},
+{
+    name: 'dividers',
+    path: '/material-components/dividers',
+    meta: {layout: 'default'},
+    component: () => import('../DemoPages/Vuetify/ComponentsPages/dividers.vue'),
+},
+{
+    name: 'expansion-panels',
+    path: '/material-components/expansion-panels',
+    meta: {layout: 'default'},
+    component: () => import('../DemoPages/Vuetify/ComponentsPages/expansion-panels.vue'),
+},
+{
+    name: 'footer',
+    path: '/material-components/footer',
+    meta: {layout: 'default'},
+    component: () => import('../DemoPages/Vuetify/ComponentsPages/footer.vue'),
+},
+{
+    name: 'groups',
+    path: '/material-components/groups',
+    meta: {layout: 'default'},
+    component: () => import('../DemoPages/Vuetify/ComponentsPages/groups.vue'),
+},
+{
+    name: 'hover',
+    path: '/material-components/hover',
+    meta: {layout: 'default'},
+    component: () => import('../DemoPages/Vuetify/ComponentsPages/hover.vue'),
+},
+{
+    name: 'icons-mat',
+    path: '/material-components/icons',
+    meta: {layout: 'default'},
+    component: () => import('../DemoPages/Vuetify/ComponentsPages/icons.vue'),
+},
+{
+    name: 'images',
+    path: '/material-components/images',
+    meta: {layout: 'default'},
+    component: () => import('../DemoPages/Vuetify/ComponentsPages/images.vue'),
+},
+{
+    name: 'autocompletes',
+    path: '/material-components/autocompletes',
+    meta: {layout: 'default'},
+    component: () => import('../DemoPages/Vuetify/ComponentsPages/autocompletes.vue'),
+},
+{
+    name: 'combobox',
+    path: '/material-components/combobox',
+    meta: {layout: 'default'},
+    component: () => import('../DemoPages/Vuetify/ComponentsPages/combobox.vue'),
+},
+{
+    name: 'forms',
+    path: '/material-components/forms',
+    meta: {layout: 'default'},
+    component: () => import('../DemoPages/Vuetify/ComponentsPages/forms.vue'),
+},
+{
+    name: 'selects',
+    path: '/material-components/selects',
+    meta: {layout: 'default'},
+    component: () => import('../DemoPages/Vuetify/ComponentsPages/selects.vue'),
+},
+{
+    name: 'selection-controls',
+    path: '/material-components/selection-controls',
+    meta: {layout: 'default'},
+    component: () => import('../DemoPages/Vuetify/ComponentsPages/selection-controls.vue'),
+},
+{
+    name: 'sliders',
+    path: '/material-components/sliders',
+    meta: {layout: 'default'},
+    component: () => import('../DemoPages/Vuetify/ComponentsPages/sliders.vue'),
+},
+{
+    name: 'textareas',
+    path: '/material-components/textareas',
+    meta: {layout: 'default'},
+    component: () => import('../DemoPages/Vuetify/ComponentsPages/textareas.vue'),
+},
+{
+    name: 'text-fields',
+    path: '/material-components/text-fields',
+    meta: {layout: 'default'},
+    component: () => import('../DemoPages/Vuetify/ComponentsPages/text-fields.vue'),
+},
+{
+    name: 'lists',
+    path: '/material-components/lists',
+    meta: {layout: 'default'},
+    component: () => import('../DemoPages/Vuetify/ComponentsPages/lists.vue'),
+},
+{
+    name: 'menus',
+    path: '/material-components/menus',
+    meta: {layout: 'default'},
+    component: () => import('../DemoPages/Vuetify/ComponentsPages/menus.vue'),
+},
+{
+    name: 'navigation-drawers',
+    path: '/material-components/navigation-drawers',
+    meta: {layout: 'default'},
+    component: () => import('../DemoPages/Vuetify/ComponentsPages/navigation-drawers.vue'),
+},
+{
+    name: 'paginations',
+    path: '/material-components/paginations',
+    meta: {layout: 'default'},
+    component: () => import('../DemoPages/Vuetify/ComponentsPages/paginations.vue'),
+},
+{
+    name: 'parallax',
+    path: '/material-components/parallax',
+    meta: {layout: 'default'},
+    component: () => import('../DemoPages/Vuetify/ComponentsPages/parallax.vue'),
+},
+{
+    name: 'datepickers',
+    path: '/material-components/datepickers',
+    meta: {layout: 'default'},
+    component: () => import('../DemoPages/Vuetify/ComponentsPages/datepickers.vue'),
+},
+{
+    name: 'timepickers',
+    path: '/material-components/timepickers',
+    meta: {layout: 'default'},
+    component: () => import('../DemoPages/Vuetify/ComponentsPages/timepickers.vue'),
+},
+{
+    name: 'progress',
+    path: '/material-components/progress',
+    meta: {layout: 'default'},
+    component: () => import('../DemoPages/Vuetify/ComponentsPages/progress.vue'),
+},
+{
+    name: 'ratings-mat',
+    path: '/material-components/ratings',
+    meta: {layout: 'default'},
+    component: () => import('../DemoPages/Vuetify/ComponentsPages/ratings.vue'),
+},
+{
+    name: 'sheets',
+    path: '/material-components/sheets',
+    meta: {layout: 'default'},
+    component: () => import('../DemoPages/Vuetify/ComponentsPages/sheets.vue'),
+},
+{
+    name: 'snackbars',
+    path: '/material-components/snackbars',
+    meta: {layout: 'default'},
+    component: () => import('../DemoPages/Vuetify/ComponentsPages/snackbars.vue'),
+},
+{
+    name: 'sparklines-mat',
+    path: '/material-components/sparklines',
+    meta: {layout: 'default'},
+    component: () => import('../DemoPages/Vuetify/ComponentsPages/sparklines.vue'),
+},
+{
+    name: 'steppers',
+    path: '/material-components/steppers',
+    meta: {layout: 'default'},
+    component: () => import('../DemoPages/Vuetify/ComponentsPages/steppers.vue'),
+},
+{
+    name: 'subheaders',
+    path: '/material-components/subheaders',
+    meta: {layout: 'default'},
+    component: () => import('../DemoPages/Vuetify/ComponentsPages/subheaders.vue'),
+},
+{
+    name: 'tabs-mat',
+    path: '/material-components/tabs',
+    meta: {layout: 'default'},
+    component: () => import('../DemoPages/Vuetify/ComponentsPages/tabs.vue'),
+},
+{
+    name: 'timelines',
+    path: '/material-components/timelines',
+    meta: {layout: 'default'},
+    component: () => import('../DemoPages/Vuetify/ComponentsPages/timelines.vue'),
+},
+{
+    name: 'toolbars',
+    path: '/material-components/toolbars',
+    meta: {layout: 'default'},
+    component: () => import('../DemoPages/Vuetify/ComponentsPages/toolbars.vue'),
+},
+{
+    name: 'tooltips',
+    path: '/material-components/tooltips',
+    meta: {layout: 'default'},
+    component: () => import('../DemoPages/Vuetify/ComponentsPages/tooltips.vue'),
+},
+{
+    name: 'treeview',
+    path: '/material-components/treeview',
+    meta: {layout: 'default'},
+    component: () => import('../DemoPages/Vuetify/ComponentsPages/treeview.vue'),
+},
+{
+    name: 'ripples',
+    path: '/material-components/ripples',
+    meta: {layout: 'default'},
+    component: () => import('../DemoPages/Vuetify/ComponentsPages/ripples.vue'),
+},
+
+// 404 Page
+
+{
+    path: '*',
+    name: '404',
+    component: () => import('../Pages/UserPages/404.vue'),
+},

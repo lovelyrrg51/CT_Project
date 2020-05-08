@@ -1,0 +1,146 @@
+{
+	"info": {
+		"_postman_id": "afae6db6-7616-4ffe-b158-180196c84c7c",
+		"name": "Test_XueLong",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "login",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"email\": \"admin@admin.com\",\n\t\"password\": \"admin\"\n}",
+					"options": {
+						"raw": {}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/user/login",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"user",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "receive_message_token",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiZW1haWwiOiJhZG1pbkBhZG1pbi5jb20iLCJ0b2tlbmV4cGlyYXRpb24iOiIyMDIwLTA1LTA5IDE0OjM3OjM3IiwiaWF0IjoxNTg4OTYzMDU3fQ.cRwnIlD_DiBP3IXzDj3Kxfa-kLC4Bm9KNUsLJjlMUAk",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"companyId\": 9,\n\t\"stationId\": 5,\n\t\"cameraId\": 8,\n\t\"message\": \"AAAAAAAAAAAAAAAAAAAAAA\"\n}",
+					"options": {
+						"raw": {}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/messagetoken/receive_message_token",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"messagetoken",
+						"receive_message_token"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "receive_message_user",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"email\": \"user1@user.com\",\n\t\"password\": \"user1\",\n\t\"companyId\": 1,\n\t\"stationId\": 1,\n\t\"cameraId\": 1,\n\t\"message\": \"ccccccccccccccccccccccccccccc\"\n}"
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/messageuser/receive_message_user",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"messageuser",
+						"receive_message_user"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get_messages",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiZW1haWwiOiJhZG1pbkBhZG1pbi5jb20iLCJ0b2tlbmV4cGlyYXRpb24iOiIyMDIwLTA1LTA5IDAxOjQyOjQzIiwiaWF0IjoxNTg4OTE2NTYzfQ.6w-ea-3ApZJhH5A_qbPz_C66icDke0bSn8i_yQ4RhEA",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:3000/api/message/get_messages",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"message",
+						"get_messages"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
